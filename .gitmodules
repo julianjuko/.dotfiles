@@ -10,9 +10,6 @@
 [submodule "bundle/vim-ags"]
 	path = .vim/bundle/vim-ags
 	url = https://github.com/gabesoft/vim-ags.git
-[submodule "bundle/vim-javascript"]
-	path = .vim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/typescript-vim"]
 	path = .vim/bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
