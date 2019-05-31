@@ -1,14 +1,21 @@
 # .juko
 My entire dev environment, since I've been setting up my dev environment on various machines lately.
 
-I use the *vim-ags* Silver Searcher plugin for Vim, so the Silver Seacher will need to be installed on your machine for this to work. Instructions on how to do this for your distro can be found in [the official repository](https://github.com/ggreer/the_silver_searcher).
-
 ## Installation
 
-First, I hope you cloned with `git clone --recursive`, otherwise you can install them by pulling with the `--recurse-submodules` flag. This is for the vim plugins which are included in this repository as submodules.
-
-
-The following utilities are required for this env as well:
+The packages required by this repository can be installed with the Brew command below. If you are not using Mac OSX, you will need to install each of these using your package manager.
 ```
 brew install git bash-completion ag
 ```
+
+You will probably have trouble cloning this into your home directory as it will not be empty. Execute this command in one fell swoop to install it in a non-intrusive way:
+```
+git init && \
+git remote add origin https://github.com/julianjuko/.juko && \
+git fetch && \
+git reset origin/master && \ 
+git checkout -t origin/master && \
+git submodule update --init --recursive
+```
+
+This repo has a .vim/bundle folder which contains vim plugins which are included in this repository as submodules and run automatically by `pathogen.vim`.
