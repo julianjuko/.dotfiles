@@ -1,15 +1,16 @@
 # Ignore everything
-*
+/*
 
 # But not these files...
 !/.bash_profile
-!/.git
 !/.git-completion.bash
 !/.gitconfig
 !/.gitignore
 !/.gitmodules
-!/.vim/
-!/.vimrc
 !/README.md
 
-# etc...
+# And not this subdirectory.
+!/.vim/
+
+# But do ignore these filetypes
+.netrwhist

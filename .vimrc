@@ -32,7 +32,6 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
-
 " pathogen to install packages
 execute pathogen#infect()
 
@@ -43,8 +42,8 @@ nnoremap tt :tabe<CR><bar>:CtrlP<CR>
 nnoremap <tab> gt
 noremap <space><tab> gT
 
-" ctrl c to copy
-vnoremap <C-a> :w ! pbcopy<CR><CR>
+" yank(copy) to and paste from system clipboard (OSX, Windows)
+set clipboard+=unnamedplus
 
 " reduce escape sequence timeout length to 100ms
 set ttimeoutlen=100
@@ -58,9 +57,6 @@ nnoremap B ^
 nnoremap E $
 "
 
-" toggle gundo
-nnoremap <leader>u :GundoToggle<CR>
-
 " theme
 colors deus
 
@@ -71,16 +67,5 @@ set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
-" toggle between number and relativenumber
-function! ToggleNumber()
-	if(&relativenumber == 1)
-		set norelativenumber
-		set number
-	else
-		set relativenumber
-	endif
-endfunc
-
 set term=screen-256color
 set t_ut=
-au BufNewFile,BufRead *.tt set filetype=tt2html
