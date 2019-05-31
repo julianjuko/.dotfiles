@@ -2,14 +2,14 @@
 *
 
 # But not these files...
-!.bash_profile
-!.git/
-!.git-completion.bash
-!.gitconfig
-!.gitignore
-!.gitmodules
-!.vim/
-!.vimrc
+!/.bash_profile
+!/.git
+!/.git-completion.bash
+!/.gitconfig
+!/.gitignore
+!/.gitmodules
+!/.vim/
+!/.vimrc
 !README.md
 
 # etc...
