@@ -11,7 +11,7 @@ brew install git bash-completion ag
 You will probably have trouble cloning this into your home directory as it will not be empty. Execute this command in one fell swoop to install it in a non-intrusive way:
 ```
 git init && \
-git remote add origin https://github.com/julianjuko/.juko && \
+git remote add origin https://github.com/julianjuko/.dotfiles && \
 git fetch && \
 git reset origin/master && \ 
 git checkout -t origin/master && \
