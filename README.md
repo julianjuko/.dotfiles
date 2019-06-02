@@ -1,4 +1,4 @@
-# .juko
+# .dotfiles
 My entire dev environment, since I've been setting up my dev environment on various machines lately.
 
 ## Installation
