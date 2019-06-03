@@ -3,10 +3,12 @@
 
 # But not these files...
 !/.bash_profile
+!/.bashrc
 !/.git-completion.bash
 !/.gitconfig
 !/.gitignore
 !/.gitmodules
+!/.profile
 !/README.md
 
 # And not this subdirectory.
