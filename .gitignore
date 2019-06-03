@@ -11,7 +11,8 @@
 !/.profile
 !/README.md
 
-# And not this subdirectory.
+# And not these subdirectories.
+!/.bash-git-prompt/
 !/.vim/
 
 # But do ignore these filetypes

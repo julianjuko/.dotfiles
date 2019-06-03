@@ -12,9 +12,9 @@ function better_cd {
 
 alias cd=better_cd
 
-if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-  __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
-  source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+  GIT_PROMPT_ONLY_IN_REPO=1
+  source $HOME/.bash-git-prompt/gitprompt.sh
 fi
 
 export GIT_PROMPT_THEME=Single_line_Dark
