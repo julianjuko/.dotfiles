@@ -7,7 +7,7 @@ alias ls='ls -lGFh --color=auto'
 alias g='git'
 
 function better_cd {
-  cd $1 && ls 
+  cd "$@" && ls 
 }
 
 alias cd=better_cd
