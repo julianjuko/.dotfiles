@@ -43,7 +43,7 @@ nnoremap <tab> gt
 noremap <space><tab> gT
 
 " yank(copy) to and paste from system clipboard (OSX, Windows)
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
 
 " reduce escape sequence timeout length to 100ms
 set ttimeoutlen=100
