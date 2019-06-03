@@ -6,6 +6,7 @@
 !/.bashrc
 !/.git-completion.bash
 !/.gitconfig
+!/.githelpers
 !/.gitignore
 !/.gitmodules
 !/.profile
