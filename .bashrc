@@ -2,6 +2,7 @@ export PS1='[\W]\$ '
 PS1='[\W]\$ '
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+export LS_COLORS=ExFxBxDxCxegedabagacad
 
 alias ls='ls -lGFh'
 alias g='git'
