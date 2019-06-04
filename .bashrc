@@ -3,7 +3,7 @@ PS1='[\W]\$ '
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-alias ls='ls -lGFh'
+alias ls='ls -lFh --color=auto'
 alias g='git'
 
 function better_cd {

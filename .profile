@@ -5,5 +5,3 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
-source ~/perl5/perlbrew/etc/bashrc
