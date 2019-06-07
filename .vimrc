@@ -23,7 +23,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " tree view
 map <C-n> :NERDTreeToggle<CR>
- 
+
 " runtime path for ctrl-p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
@@ -56,6 +56,17 @@ nnoremap k gk
 nnoremap B ^
 nnoremap E $
 "
+
+" better autocomplete with tab
+function! Tab_Or_Complete()
+  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    return "\<C-N>"
+  else
+    return "\<Tab>"
+  endif
+endfunction
+:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+:set dictionary="/usr/dict/words"
 
 " theme
 colors deus
