@@ -5,6 +5,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias ls='ls -lGFh'
 alias g='git'
+alias y='yarn'
 
 function better_cd {
   cd "$@" && ls
