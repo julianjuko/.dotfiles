@@ -3,6 +3,9 @@ PS1='[\W]\$ '
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+export HISTSIZE=
+export HISTFILESIZE=
+
 alias ls='ls -lGFh'
 alias g='git'
 alias y='yarn'
