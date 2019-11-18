@@ -48,6 +48,10 @@ noremap <space><tab> gT
 " reduce escape sequence timeout length to 100ms
 set ttimeoutlen=100
 
+" move panes with space h/j/k/l
+nnoremap <space> <C-w>
+nnoremap <space>p :CtrlP<cr>
+
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
