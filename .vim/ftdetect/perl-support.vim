@@ -1,2 +1,2 @@
-au BufNewFile,BufRead *.pl      set filetype=perl
+au BufNewFile,BufRead *.pm      set filetype=perl
 
