@@ -1,1 +1,1 @@
-setlocal noexpandtqb
+setlocal expandtab!

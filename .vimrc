@@ -11,9 +11,9 @@ filetype plugin indent on
 let mapleader = ','
 
 " two spaces
-:set tabstop=2
-:set shiftwidth=2
-:set expandtab
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Make backspace behave normally
 set backspace=indent,eol,start
