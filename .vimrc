@@ -11,9 +11,9 @@ filetype plugin indent on
 let mapleader = ','
 
 " two spaces
-:set tabstop=2
-:set shiftwidth=2
-:set expandtab
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Make backspace behave normally
 set backspace=indent,eol,start
@@ -47,6 +47,10 @@ noremap <space><tab> gT
 
 " reduce escape sequence timeout length to 100ms
 set ttimeoutlen=100
+
+" move panes with space h/j/k/l
+nnoremap <space> <C-w>
+nnoremap <space>p :CtrlP<cr>
 
 " move vertically by visual line
 nnoremap j gj

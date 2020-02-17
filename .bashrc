@@ -3,8 +3,14 @@ PS1='[\W]\$ '
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+export HISTSIZE=
+export HISTFILESIZE=
+
 alias ls='ls -lFh --color=auto'
+
 alias g='git'
+alias y='yarn'
+alias h='history'
 
 function better_cd {
   cd "$@" && ls
