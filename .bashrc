@@ -34,3 +34,5 @@ if [ -f ~/.git-completion.bash ]; then
   # Add git completion to aliases
   __git_complete g __git_main
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
