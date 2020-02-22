@@ -15,7 +15,8 @@ git remote add origin https://github.com/julianjuko/.dotfiles && \
 git fetch && \
 git reset origin/master && \ 
 git checkout -t origin/master && \
-git submodule update --init --recursive
+git submodule update --init --recursive && \
+~/.fzf/install
 ```
 
 This repo has a .vim/bundle folder which contains vim plugins which are included in this repository as submodules and run automatically by `pathogen.vim`.
