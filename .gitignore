@@ -15,6 +15,7 @@
 # And not these subdirectories.
 !/.bash-git-prompt/
 !/.vim/
+!/.fzf/
 
 # But do ignore these filetypes
 .netrwhist
