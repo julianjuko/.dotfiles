@@ -7,3 +7,5 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 source ~/perl5/perlbrew/etc/bashrc
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
