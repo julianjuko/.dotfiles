@@ -3,8 +3,11 @@ PS1='[\W]\$ '
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-export HISTSIZE=
-export HISTFILESIZE=
+export HISTSIZE=50000
+export HISTFILESIZE=50000
+export HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'n'}history -a; history -c; history -r"
 
 alias ls='ls -lGFh'
 alias g='git'
