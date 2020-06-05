@@ -8,6 +8,7 @@
 !/.gitconfig
 !/.githelpers
 !/.gitignore
+!/.gitignore_global
 !/.gitmodules
 !/.profile
 !/README.md
